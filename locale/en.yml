@@ -1,0 +1,20 @@
+fof-oauth:
+  lib:
+    providers:
+      gitea_org: Gitea (Org restricted)
+
+  admin:
+    settings:
+      providers:
+        gitea_org:
+          description: Only allow users who are active members of one of the allowed Gitea organizations.
+          base_url_label: Gitea Base URL
+          client_id_label: Client ID
+          client_secret_label: Client Secret
+          allowed_orgs_label: Allowed Gitea organizations (comma-separated)
+          allowed_orgs_help: "Example: orgA,orgB. Use the org handle shown in the URL: https://gitea.example.com/<ORG>"
+
+  forum:
+    log_in:
+      with_gitea_org_button: Log in with Gitea
+      with_gitea_org: Log in with Gitea
