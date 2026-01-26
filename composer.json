@@ -1,0 +1,34 @@
+{
+  "name": "zrobot/flarum-gitea-org-oauth",
+  "type": "flarum-extension",
+  "description": "Flarum FoF OAuth provider for logging in via Gitea, restricted to specific organizations.",
+  "keywords": [
+    "flarum",
+    "extension",
+    "oauth",
+    "gitea"
+  ],
+  "license": "MIT",
+  "require": {
+    "flarum/core": "^1.8",
+    "fof/oauth": "^1.7",
+    "league/oauth2-client": "^2.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Acme\\GiteaOrgOAuth\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Gitea Org OAuth",
+      "icon": {
+        "name": "fab fa-git-alt",
+        "backgroundColor": "#24292e",
+        "color": "#ffffff"
+      }
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
