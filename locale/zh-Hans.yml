@@ -1,0 +1,20 @@
+fof-oauth:
+  lib:
+    providers:
+      gitea_org: Gitea（组织限制）
+
+  admin:
+    settings:
+      providers:
+        gitea_org:
+          description: 仅允许属于指定 Gitea Organization 的成员登录/注册。
+          base_url_label: Gitea 基础地址
+          client_id_label: Client ID
+          client_secret_label: Client Secret
+          allowed_orgs_label: 允许的 Gitea 组织（多个用英文逗号分隔）
+          allowed_orgs_help: "例如：orgA,orgB。填写组织主页 URL 里 https://gitea.example.com/<ORG> 的 <ORG>。"
+
+  forum:
+    log_in:
+      with_gitea_org_button: 使用 Gitea 登录
+      with_gitea_org: 使用 Gitea 登录
